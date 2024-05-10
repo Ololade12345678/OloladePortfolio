@@ -163,7 +163,7 @@
     background-color: black;
     font-family: "poppins", sans-serif;
 }
-.about-img img{
+.about-img .img-1{
     position: relative;
     width: 400px;
     border-top-left-radius: 5rem;
@@ -171,6 +171,15 @@
     box-shadow: 0 0 25px var(--ololade),
                 0 0 25px var(--ololade);
 }
+
+.about-img .img-2{
+    position: relative;
+    width: 400px;
+    box-shadow: 0 0 25px var(--ololade),
+                0 0 25px var(--ololade);
+                display: none;
+}
+
 .heading span{
     color: var(--ololade);
     font-size: 3rem;
@@ -283,29 +292,95 @@
 
 
 
-@media (max-width: 1280px){
-    .home-content{
-        font-size: 1rem;
+@media (max-width: 896px){
+    .header{
+    position: fixed;
+    max-width: 412px;
+    overflow: hidden;
+    padding: 15px 8%;
     }
-    .heading{
-        font-size: 2.1rem;
-        padding-bottom: 0.65rem;
+    .logo{
+        font-size: 15px;
+        color: white;
     }
-    .heading:before{
-        margin-bottom: 0.2rem;
-        font-size: 0.8rem;
-        letter-spacing: 2px;
+    .header .logo{
+        position: relative;
+        right: 4rem;
     }
-    .heading:after{
-        height: 3.5px;
-        width: 70px;
+    .logo span{
+        font-size: 2rem;
     }
-    .title-sm{
-        font-size: 1.2rem;
-    }
-    .btn{
-        padding: 0.75rem;
-        font-size: 0.8rem;
 
+    /* navlinks */
+
+    .navbar a{
+        font-size: 9px;
     }
+    .home{
+        width: 412px;
+        display: block;
+        min-height: 75vh;
+    }
+
+    .home-content{
+        max-width: 412px;
+    }
+    .home-content h3{
+        font-size: 25px;
+        margin-top: 7rem;
+    }
+    .home-content h1{
+        font-size: 30px;
+    }
+    .home-content p{
+        font-size: 10px;
+        position: relative;
+        bottom: 0.8rem;
+    }
+    .home-content span{
+        color: var(--ololade);
+    }
+    .img-box img{
+        width: 20rem;
+        margin-top: 1.5rem;
+    }
+
+    .btn-box{
+        gap: 1em;
+        position: relative;
+        bottom: 1.5rem;
+    }
+
+    .about{
+        display: block;
+    }
+
+    .about-img .img-1{
+        width: 20rem;
+        display: none;
+    }
+    .about-img .img-2{
+    position: relative;
+    width: 8rem;
+    height: 15vh;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--ololade),
+                0 0 25px var(--ololade);
+    display: block;
+    }
+
+    .heading span{
+        color: var(--ololade);
+        font-size: 1.5rem;
+    }
+    .about-content h2{
+        font-size: 2rem;
+    }
+    .about-content h3{
+        font-size: 1.8rem;
+    }
+    .about-content p{
+        font-size: 10px;
+    }
+
 }

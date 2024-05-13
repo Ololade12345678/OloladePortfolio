@@ -368,7 +368,8 @@
 
     .about{
         display: block;
-        height: 100vh;
+        height: 70vh;
+        position: fixed;
     }
 
     .about-img .img-1{
